@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Survivor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui">
+            <div class="health-bar">
+                <div class="health-fill"></div>
+            </div>
+            <div class="xp-bar">
+                <div class="xp-fill"></div>
+                <div class="xp-text">Level 1</div>
+            </div>
+        </div>
+        <div id="slotMachineOverlay" class="hidden">
+            <div class="slot-machine">
+                <div class="slot-frame">
+                    <div class="slot-reel">
+                        <div class="slot-item" data-index="0"></div>
+                        <div class="slot-item" data-index="1"></div>
+                        <div class="slot-item" data-index="2"></div>
+                    </div>
+                    <div class="slot-highlight"></div>
+                </div>
+                <div class="slot-choices">
+                    <button class="choice-btn" data-choice="0">Choose</button>
+                    <button class="choice-btn" data-choice="1">Choose</button>
+                    <button class="choice-btn" data-choice="2">Choose</button>
+                </div>
+                <div class="slot-descriptions">
+                    <div class="desc" data-desc="0"></div>
+                    <div class="desc" data-desc="1"></div>
+                    <div class="desc" data-desc="2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
